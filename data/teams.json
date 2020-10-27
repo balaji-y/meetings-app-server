@@ -1,0 +1,184 @@
+[
+    {
+        "_id": {
+            "$oid": "234567890123456789012341"
+        },
+        "name": "Telstra Joinees 2020",
+        "shortName": "telstra-joinees-2020",
+        "description": "The newest members of Telstra team",
+        "members": [
+            {
+                "userId": {
+                    "$oid": "123456789012345678901249"
+                },
+                "email": "aravind@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901250"
+                },
+                "email": "asmita@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901251"
+                },
+                "email": "dhruv@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901252"
+                },
+                "email": "divya@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901253"
+                },
+                "email": "gaurav@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901254"
+                },
+                "email": "piyush@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901255"
+                },
+                "email": "rahul@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901256"
+                },
+                "email": "sahil@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901257"
+                },
+                "email": "vinay@telstra.com"
+            }
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "234567890123456789012342"
+        },
+        "name": "Annual Day",
+        "shortName": "fun",
+        "description": "Team organizing fun events for Annual Day at Telstra",
+        "members": [
+            {
+                "userId": {
+                    "$oid": "123456789012345678901234"
+                },
+                "email": "shahrukh@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901235"
+                },
+                "email": "kajol@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901236"
+                },
+                "email": "deepika@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901237"
+                },
+                "email": "ranbir@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901238"
+                },
+                "email": "ranveer@telstra.com"
+            }
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "234567890123456789012343"
+        },
+        "name": "Sports Day - Cricket",
+        "shortName": "cricket",
+        "description": "Team organizing the cricket matches for Sports Day at Telstra",
+        "members": [
+            {
+                "userId": {
+                    "$oid": "123456789012345678901241"
+                },
+                "email": "kohli@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901242"
+                },
+                "email": "dhoni@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901243"
+                },
+                "email": "dravid@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901244"
+                },
+                "email": "sachin@telstra.com"
+            }
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "234567890123456789012344"
+        },
+        "name": "Batsmen",
+        "shortName": "batsmen",
+        "description": "Batsmen in Telstra cricket team",
+        "members": [
+            {
+                "userId": {
+                    "$oid": "123456789012345678901241"
+                },
+                "email": "kohli@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901242"
+                },
+                "email": "dhoni@telstra.com"
+            }
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "234567890123456789012345"
+        },
+        "name": "Bowlers",
+        "shortName": "bowlers",
+        "description": "Bowlers in Telstra cricket team",
+        "members": [
+            {
+                "userId": {
+                    "$oid": "123456789012345678901247"
+                },
+                "email": "ashwin@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901248"
+                },
+                "email": "irfan@telstra.com"
+            }
+        ]
+    }
+]

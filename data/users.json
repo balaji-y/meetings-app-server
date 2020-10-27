@@ -1,0 +1,242 @@
+[
+    {
+        "_id": {
+            "$oid": "123456789012345678901234"
+        },
+        "name": "Shahrukh Khan",
+        "email": "shahrukh@telstra.com",
+        "password": "shahrukh"
+    },
+    {
+        "_id": {
+            "$oid": "123456789012345678901235"
+        },
+        "name": "Kajol",
+        "email": "kajol@telstra.com",
+        "password": "kajol"
+    },
+    {
+        "_id": {
+            "$oid": "123456789012345678901236"
+        },
+        "name": "Deepika Padukone",
+        "email": "deepika@telstra.com",
+        "password": "deepika"
+    },
+    {
+        "_id": {
+            "$oid": "123456789012345678901237"
+        },
+        "name": "Ranbir Kapoor",
+        "email": "ranbir@telstra.com",
+        "password": "ranbir"
+    },
+    {
+        "_id": {
+            "$oid": "123456789012345678901238"
+        },
+        "name": "Ranveer Singh",
+        "email": "ranveer@telstra.com",
+        "password": "ranveer"
+    },
+    {
+        "_id": {
+            "$oid": "123456789012345678901239"
+        },
+        "name": "Amitabh Bachchan",
+        "email": "amitabh@telstra.com",
+        "password": "amitabh"
+    },
+    {
+        "_id": {
+            "$oid": "123456789012345678901240"
+        },
+        "name": "John Abraham",
+        "email": "john@telstra.com",
+        "password": "john"
+    },
+    {
+        "_id": {
+            "$oid": "123456789012345678901241"
+        },
+        "name": "Virat Kohli",
+        "email": "kohli@telstra.com",
+        "password": "kohli"
+    },
+    {
+        "_id": {
+            "$oid": "123456789012345678901242"
+        },
+        "name": "Mahendra Singh Dhoni",
+        "email": "dhoni@telstra.com",
+        "password": "dhoni"
+    },
+    {
+        "_id": {
+            "$oid": "123456789012345678901243"
+        },
+        "name": "Rahul Dravid",
+        "email": "dravid@telstra.com",
+        "password": "dravid"
+    },
+    {
+        "_id": {
+            "$oid": "123456789012345678901244"
+        },
+        "name": "Sachin Tendulkar",
+        "email": "sachin@telstra.com",
+        "password": "sachin"
+    },
+    {
+        "_id": {
+            "$oid": "123456789012345678901245"
+        },
+        "name": "Virender Sehwag",
+        "email": "sehwag@telstra.com",
+        "password": "sehwag"
+    },
+    {
+        "_id": {
+            "$oid": "123456789012345678901246"
+        },
+        "name": "Jasprit Bumrah",
+        "email": "bumrah@telstra.com",
+        "password": "bumrah"
+    },
+    {
+        "_id": {
+            "$oid": "123456789012345678901247"
+        },
+        "name": "Ravi Ashwin",
+        "email": "ashwin@telstra.com",
+        "password": "ashwin"
+    },
+    {
+        "_id": {
+            "$oid": "123456789012345678901248"
+        },
+        "name": "Irfan Pathan",
+        "email": "irfan@telstra.com",
+        "password": "irfan"
+    },
+    {
+        "_id": {
+            "$oid": "123456789012345678901249"
+        },
+        "name": "Aravind Varier",
+        "email": "aravind@telstra.com",
+        "password": "aravind"
+    },
+    {
+        "_id": {
+            "$oid": "123456789012345678901250"
+        },
+        "name": "Asmita Chavan",
+        "email": "asmita@telstra.com",
+        "password": "asmita"
+    },
+    {
+        "_id": {
+            "$oid": "123456789012345678901251"
+        },
+        "name": "Dhruv Khanna",
+        "email": "dhruv@telstra.com",
+        "password": "dhruv"
+    },
+    {
+        "_id": {
+            "$oid": "123456789012345678901252"
+        },
+        "name": "Divya Nagare",
+        "email": "divya@telstra.com",
+        "password": "divya"
+    },
+    {
+        "_id": {
+            "$oid": "123456789012345678901253"
+        },
+        "name": "Gaurav Deore",
+        "email": "gaurav@telstra.com",
+        "password": "gaurav"
+    },
+    {
+        "_id": {
+            "$oid": "123456789012345678901254"
+        },
+        "name": "Piyush Eklavya",
+        "email": "piyush@telstra.com",
+        "password": "piyush"
+    },
+    {
+        "_id": {
+            "$oid": "123456789012345678901255"
+        },
+        "name": "Rahul Anand",
+        "email": "rahul@telstra.com",
+        "password": "rahul"
+    },
+    {
+        "_id": {
+            "$oid": "123456789012345678901256"
+        },
+        "name": "Sahil Bhola",
+        "email": "sahil@telstra.com",
+        "password": "sahil"
+    },
+    {
+        "_id": {
+            "$oid": "123456789012345678901257"
+        },
+        "name": "Vinay Reddy",
+        "email": "vinay@telstra.com",
+        "password": "vinay"
+    },
+    {
+        "_id": {
+            "$oid": "123456789012345678901258"
+        },
+        "name": "Mukesh Ambani",
+        "email": "ambani@telstra.com",
+        "password": "ambani"
+    },
+    {
+        "_id": {
+            "$oid": "123456789012345678901259"
+        },
+        "name": "Ratan Tata",
+        "email": "tata@telstra.com",
+        "password": "tata"
+    },
+    {
+        "_id": {
+            "$oid": "123456789012345678901260"
+        },
+        "name": "Kumarmangalam Birla",
+        "email": "birla@telstra.com",
+        "password": "birla"
+    },
+    {
+        "_id": {
+            "$oid": "123456789012345678901261"
+        },
+        "name": "Azim Premji",
+        "email": "azim@telstra.com",
+        "password": "azim"
+    },
+    {
+        "_id": {
+            "$oid": "123456789012345678901262"
+        },
+        "name": "Gautam Adani",
+        "email": "adani@telstra.com",
+        "password": "adani"
+    },
+    {
+        "_id": {
+            "$oid": "123456789012345678901263"
+        },
+        "name": "Narayana Murthy",
+        "email": "murthy@telstra.com",
+        "password": "murthy"
+    }
+]

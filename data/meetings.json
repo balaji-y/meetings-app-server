@@ -1,0 +1,354 @@
+[
+    {
+        "_id": {
+            "$oid": "345678901234567890123412"
+        },
+        "name": "Post-training party",
+        "description": "Cheers! Online party to celebrate successful completion of training.",
+        "date": {
+            "$date": "2020-09-19T00:00:00.000Z"
+        },
+        "startTime": { "hours": 20, "minutes": 0 },
+        "endTime": { "hours": 21, "minutes": 30 },
+        "attendees": [
+            {
+                "userId": {
+                    "$oid": "123456789012345678901249"
+                },
+                "email": "aravind@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901250"
+                },
+                "email": "asmita@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901251"
+                },
+                "email": "dhruv@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901252"
+                },
+                "email": "divya@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901253"
+                },
+                "email": "gaurav@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901254"
+                },
+                "email": "piyush@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901255"
+                },
+                "email": "rahul@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901256"
+                },
+                "email": "sahil@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901257"
+                },
+                "email": "vinay@telstra.com"
+            }
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "345678901234567890123413"
+        },
+        "name": "User profile pic",
+        "description": "Meeting to discuss S3 profile pic edit and upload requirements, and assign tasks",
+        "date": {
+            "$date": "2020-09-17T00:00:00.000Z"
+        },
+        "startTime": { "hours": 9, "minutes": 30 },
+        "endTime": { "hours": 10, "minutes": 0 },
+        "attendees": [
+            {
+                "userId": {
+                    "$oid": "123456789012345678901251"
+                },
+                "email": "dhruv@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901252"
+                },
+                "email": "divya@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901253"
+                },
+                "email": "gaurav@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901255"
+                },
+                "email": "rahul@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901256"
+                },
+                "email": "sahil@telstra.com"
+            }
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "345678901234567890123414"
+        },
+        "name": "Admin features",
+        "description": "Meeting to discuss implementation of Admin features, and assign tasks",
+        "date": {
+            "$date": "2020-09-17T00:00:00.000Z"
+        },
+        "startTime": { "hours": 9, "minutes": 30 },
+        "endTime": { "hours": 10, "minutes": 0 },
+        "attendees": [
+            {
+                "userId": {
+                    "$oid": "123456789012345678901249"
+                },
+                "email": "aravind@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901250"
+                },
+                "email": "asmita@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901254"
+                },
+                "email": "piyush@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901257"
+                },
+                "email": "vinay@telstra.com"
+            }
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "345678901234567890123415"
+        },
+        "name": "Short-film making workshop",
+        "description": "Workshop on making short films by various artists at Telstra",
+        "date": {
+            "$date": "2020-09-16T00:00:00.000Z"
+        },
+        "startTime": { "hours": 18, "minutes": 0 },
+        "endTime": { "hours": 20, "minutes": 0 },
+        "attendees": [
+            {
+                "userId": {
+                    "$oid": "123456789012345678901236"
+                },
+                "email": "deepika@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901239"
+                },
+                "email": "amitabh@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901240"
+                },
+                "email": "john@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901249"
+                },
+                "email": "aravind@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901250"
+                },
+                "email": "asmita@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901255"
+                },
+                "email": "rahul@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901256"
+                },
+                "email": "sahil@telstra.com"
+            }
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "345678901234567890123416"
+        },
+        "name": "Rock-solid defence",
+        "description": "How to tire your opponents into submission yet not break a sweat",
+        "date": {
+            "$date": "2020-09-16T00:00:00.000Z"
+        },
+        "startTime": { "hours": 16, "minutes": 30 },
+        "endTime": { "hours": 17, "minutes": 45 },
+        "attendees": [
+            {
+                "userId": {
+                    "$oid": "123456789012345678901241"
+                },
+                "email": "kohli@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901243"
+                },
+                "email": "dravid@telstra.com"
+            },
+            {
+                "_id": {
+                    "$oid": "123456789012345678901244"
+                },
+                "name": "Sachin Tendulkar",
+                "email": "sachin@telstra.com",
+                "password": "sachin"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901251"
+                },
+                "email": "dhruv@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901252"
+                },
+                "email": "divya@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901253"
+                },
+                "email": "gaurav@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901254"
+                },
+                "email": "piyush@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901257"
+                },
+                "email": "vinay@telstra.com"
+            }
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "345678901234567890123417"
+        },
+        "name": "User profile pic - Presentation",
+        "description": "Presentation on implementation of S3 profile pic edit and upload requirements",
+        "date": {
+            "$date": "2020-09-18T00:00:00.000Z"
+        },
+        "startTime": { "hours": 15, "minutes": 15 },
+        "endTime": { "hours": 16, "minutes": 0 },
+        "attendees": [
+            {
+                "userId": {
+                    "$oid": "123456789012345678901251"
+                },
+                "email": "dhruv@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901252"
+                },
+                "email": "divya@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901253"
+                },
+                "email": "gaurav@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901255"
+                },
+                "email": "rahul@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901256"
+                },
+                "email": "sahil@telstra.com"
+            }
+        ]
+    },
+    {
+        "_id": {
+            "$oid": "345678901234567890123418"
+        },
+        "name": "Admin features - Presentation",
+        "description": "Presentation on implementation of Admin features",
+        "date": {
+            "$date": "2020-09-18T00:00:00.000Z"
+        },
+        "startTime": { "hours": 14, "minutes": 30 },
+        "endTime": { "hours": 15, "minutes": 15 },
+        "attendees": [
+            {
+                "userId": {
+                    "$oid": "123456789012345678901249"
+                },
+                "email": "aravind@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901250"
+                },
+                "email": "asmita@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901254"
+                },
+                "email": "piyush@telstra.com"
+            },
+            {
+                "userId": {
+                    "$oid": "123456789012345678901257"
+                },
+                "email": "vinay@telstra.com"
+            }
+        ]
+    }
+]
