@@ -56,6 +56,6 @@ const meetingSchema = new mongoose.Schema({
         type: [attendeeSchema],
         required:true
     }
-});
+},{versionKey:false});
 
 mongoose.model('Meeting',meetingSchema);

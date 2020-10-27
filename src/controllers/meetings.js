@@ -10,7 +10,10 @@ async function getMeetings(req,res,next){
 
     if(date === undefined || userId===undefined)
     {
-        res.status(400).json({message:'Date and userId should be sent'})
+        const error = new Error('Date and userId should be sent')
+        error.status = 400;
+        next(error);
+        return;
     }
 
     else{
@@ -67,7 +70,10 @@ async function addUsersForMeeting(req,res,next){
     
     if(userIds === undefined)
     {
-        res.status(400).json({message:'UserId required'})
+        const error = new Error('UserId required');
+        error.status(400)
+        next(error);
+        return;
     }
     else
     {
@@ -85,5 +91,39 @@ async function addUsersForMeeting(req,res,next){
     }
 }
 
+async function addMeeting(req, res, next){
+    const data = req.body;
+    const user = {
+        email:res.locals.claims.email,
+        userId : res.locals.claims.userId
+    };
 
-module.exports = { getMeetings,deleteUserFromMeeting,addUsersForMeeting };
+    let meetings;
+    try {
+        if(data instanceof Array)
+        {
+            meetings = data;
+        }
+        else{
+            meetings = [data];
+        }
+
+        meetings.forEach(meeting => {
+            if(meeting.attendees.indexOf(user) === -1){
+                 meeting.attendees.push(user);
+            }
+        });
+
+        const addedMeetings = await Meeting.insertMany(meetings);
+        res.status(201).json(addedMeetings);
+    }
+    catch(error)
+    {
+        error.status = 500;
+        next(error);
+        return;
+    }
+}
+
+
+module.exports = { getMeetings,deleteUserFromMeeting,addUsersForMeeting,addMeeting };
