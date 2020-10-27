@@ -64,17 +64,24 @@ async function deleteUserFromMeeting(req,res,next){
 async function addUsersForMeeting(req,res,next){
     const meetingId = req.params.meetingId;
     const userIds = req.body.userIds;
-
-    try{
-        const updatedMeeting = await Meeting.findByIdAndUpdate(meetingId,{
-                                    $addToSet: { attendees : userIds }
-                                 });
-        res.json(updatedMeeting);
-
+    
+    if(userIds === undefined)
+    {
+        res.status(400).json({message:'UserId required'})
     }
-    catch(error){
-        error.status = 400;
-        next(error);
+    else
+    {
+        try{
+            const updatedMeeting = await Meeting.findByIdAndUpdate(meetingId,{
+                                        $addToSet: { attendees : userIds }
+                                     },{runValidators:true});
+            res.json(updatedMeeting);
+    
+        }
+        catch(error){
+            error.status = 400;
+            next(error);
+        }
     }
 }
 

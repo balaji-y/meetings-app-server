@@ -1,23 +1,30 @@
+require('./db/init');
 const express = require('express');
 const app = express();
 
-require('../db/init');
+
+const meetingsRouter = require('./routes/meetings');
+const usersRouter = require('./routes/users');
+const authRouter = require('./routes/auth');
+
+const {genericErrorHandler} = require('./middlewares/error');
+const port = process.env.PORT || 3000;
 
 app.use(express.json());
+app.use(express.urlencoded());
 
-const meetingsRouter = require('../routes/meetings');
-const usersRouter = require('../routes/users');
 
 app.use('/api/meetings',meetingsRouter);
 app.use('/api/users',usersRouter);
-const port = process.env.PORT || 3000;
+app.use('/api/auth',authRouter);
 
-app.use((err,req,res,next) =>{
-    res.status(err.status).json({
-        message:err.message
-    })
-});
+app.use(genericErrorHandler);
 
-app.listen(port,()=>{
+app.listen(port,(err)=>{
+    if(err)
+    {
+        console.log(err.message);
+        return;
+    }
     console.log(`server started at http://localhost:${port}`);
 });

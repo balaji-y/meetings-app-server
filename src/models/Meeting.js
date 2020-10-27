@@ -52,7 +52,10 @@ const meetingSchema = new mongoose.Schema({
             max:59
         }
     },
-    attendees:[attendeeSchema]
+    attendees:{
+        type: [attendeeSchema],
+        required:true
+    }
 });
 
 mongoose.model('Meeting',meetingSchema);

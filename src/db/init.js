@@ -15,7 +15,7 @@ mongoose.connect(uri,{useUnifiedTopology:true,useNewUrlParser:true});
 mongoose.connection.on('open' , ()=> {
     console.log('DB Connected');
     //call this when you want to import data
-   // seed();
+   //seed();
 });
 
 mongoose.connection.on('error', (err)=>{
