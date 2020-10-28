@@ -3,10 +3,18 @@ const Meeting = mongoose.model('Meeting');
 const User = mongoose.model('User');
 
 async function getMeetings(req,res,next){
-    const date = req.query.date.toLowerCase();
-    const userId = req.query.userId;
+    let date = req.query.date;
+    if(date)
+        date = date.toLowerCase();
+    const userId = res.locals.claims.userId;
     const searchTerm = req.query.searchTerm;
 
+    /*if(date === undefined){
+        let todayDate = new Date();
+        date = todayDate.getFullYear()+'-'+(todayDate.getMonth()+1)+'-'+todayDate.getDate();
+        //console.log(date);
+    }*/
+        
 
     if(date === undefined || userId===undefined)
     {
@@ -19,7 +27,11 @@ async function getMeetings(req,res,next){
     else{
         try{
             const filter = {'attendees.userId':userId};
-            const today = new Date();
+            const today = new Date().toISOString().substr(0,10); 
+            let tomorrow = new Date()
+            tomorrow.setDate(tomorrow.getDate()+1) 
+            tomorrow = tomorrow.toISOString().substr(0,10);
+
             switch(date){
                 case "past" : filter.date= {$lt: today}
                             console.log(filter);
@@ -28,7 +40,7 @@ async function getMeetings(req,res,next){
                             break;
                 case "all" : delete filter.date;
                             break;
-                case "today" : filter.date = {$eq:today}
+                case "today" : filter.date = { $gte:today, $lt: tomorrow }
                             break;
                 default :     filter.date = date;
                         
@@ -49,7 +61,7 @@ async function getMeetings(req,res,next){
 
 async function deleteUserFromMeeting(req,res,next){
     const meetingId = req.params.meetingId;
-    const userId = req.params.userId;
+    const userId = res.locals.claims.userId;
 
     try{
             const updatedMeeting = await Meeting.findByIdAndUpdate(meetingId,{

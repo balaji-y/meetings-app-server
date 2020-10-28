@@ -6,4 +6,18 @@ async function getUsers(req,res,next){
     res.json(users);
 };
 
-module.exports = {getUsers};
+async function getUserIdForEmail(req,res,next){
+    try{
+        const email = req.query.email;
+        const userId = await User.find({email:email},{_id:1}).exec();
+        res.json(userId[0]);
+    }
+    catch(error)
+    {
+        error.status = 500;
+        next(error);
+    }
+    
+}
+
+module.exports = {getUsers , getUserIdForEmail};

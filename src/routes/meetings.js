@@ -5,7 +5,7 @@ const {authenticate} = require('../utils/auth');
 
 router.get('/',authenticate, getMeetings );
 router.post('/:meetingId/users', authenticate,addUsersForMeeting);
-router.delete('/:meetingId/users/:userId',authenticate ,deleteUserFromMeeting);
+router.delete('/:meetingId/user',authenticate ,deleteUserFromMeeting);
 router.post('/add',authenticate,addMeeting);
 
 module.exports = router;

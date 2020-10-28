@@ -1,7 +1,7 @@
 require('./db/init');
 const express = require('express');
 const app = express();
-
+const cors = require('cors');
 
 const meetingsRouter = require('./routes/meetings');
 const usersRouter = require('./routes/users');
@@ -10,6 +10,7 @@ const authRouter = require('./routes/auth');
 const {genericErrorHandler} = require('./middlewares/error');
 const port = process.env.PORT || 3000;
 
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded());
 
