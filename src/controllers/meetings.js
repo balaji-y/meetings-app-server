@@ -104,29 +104,27 @@ async function addUsersForMeeting(req,res,next){
 }
 
 async function addMeeting(req, res, next){
-    const data = req.body;
+    const data = req.body.meeting;
+    console.log(data);
     const user = {
         email:res.locals.claims.email,
         userId : res.locals.claims.userId
     };
 
-    let meetings;
+ 
     try {
-        if(data instanceof Array)
-        {
-            meetings = data;
-        }
-        else{
-            meetings = [data];
-        }
-
-        meetings.forEach(meeting => {
-            if(meeting.attendees.indexOf(user) === -1){
-                 meeting.attendees.push(user);
+ 
+        meeting = data;
+            console.log("Before",meeting.attendees);
+            if(meeting.attendees)
+            {
+                if(meeting.attendees.indexOf(user) === -1){
+                    meeting.attendees.push(user);
+                }
             }
-        });
+            console.log("After",meeting.attendees);
 
-        const addedMeetings = await Meeting.insertMany(meetings);
+        const addedMeetings = await Meeting.insertMany(meeting);
         res.status(201).json(addedMeetings);
     }
     catch(error)
