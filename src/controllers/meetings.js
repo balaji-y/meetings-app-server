@@ -34,7 +34,7 @@ async function getMeetings(req,res,next){
 
             switch(date){
                 case "past" : filter.date= {$lt: today}
-                            console.log(filter);
+                            //console.log(filter);
                             break;
                 case "upcoming" : filter.date={$gt: today}
                             break;
@@ -62,6 +62,7 @@ async function getMeetings(req,res,next){
 async function deleteUserFromMeeting(req,res,next){
     const meetingId = req.params.meetingId;
     const userId = res.locals.claims.userId;
+    console.log(meetingId);
 
     try{
             const updatedMeeting = await Meeting.findByIdAndUpdate(meetingId,{
@@ -79,6 +80,9 @@ async function deleteUserFromMeeting(req,res,next){
 async function addUsersForMeeting(req,res,next){
     const meetingId = req.params.meetingId;
     const userIds = req.body.userIds;
+    
+    console.log(meetingId);
+    console.log(userIds);
     
     if(userIds === undefined)
     {
@@ -104,35 +108,45 @@ async function addUsersForMeeting(req,res,next){
 }
 
 async function addMeeting(req, res, next){
-    const data = req.body.meeting;
-    console.log(data);
-    const user = {
-        email:res.locals.claims.email,
-        userId : res.locals.claims.userId
-    };
+    const meeting = req.body.meeting;
+    //console.log(data);
+    const email = res.locals.claims.email;
+    const userId =  res.locals.claims.userId;
+    const attendeesEmail = meeting.attendeesEmail;
+    const attendeesFilter = {email: {$in: attendeesEmail}};
 
- 
-    try {
- 
-        meeting = data;
-            console.log("Before",meeting.attendees);
-            if(meeting.attendees)
-            {
-                if(meeting.attendees.indexOf(user) === -1){
-                    meeting.attendees.push(user);
-                }
+
+    User.find(attendeesFilter).exec((error,users)=>{
+        if(error)
+        {
+            error.status = 500;
+            return next(error);
+        }
+
+        validAttendees = users.map(user => {
+            return {
+                userId: user._id,
+                email: user.email
             }
-            console.log("After",meeting.attendees);
+        });
 
-        const addedMeetings = await Meeting.insertMany(meeting);
-        res.status(201).json(addedMeetings);
-    }
-    catch(error)
-    {
-        error.status = 500;
-        next(error);
-        return;
-    }
+        if( !validAttendees.find(attendee => attendee.userId.toString() === userId)){
+            validAttendees.push({userId,email});
+        }
+
+        meeting.attendees = validAttendees;
+        console.log(meeting);
+
+        Meeting.create(meeting,(error,createdMeeting)=>{
+            if(error){
+                error.status = 500;
+                next(error);
+            }
+            else{
+                res.status(201).json(createdMeeting);
+            }
+        })
+    })
 }
 
 
