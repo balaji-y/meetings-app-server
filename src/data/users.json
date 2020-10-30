@@ -4,239 +4,239 @@
             "$oid": "123456789012345678901234"
         },
         "name": "Shahrukh Khan",
-        "email": "shahrukh@telstra.com",
-        "password": "shahrukh"
+        "email": "shahrukh@example.com",
+        "password": "$2b$10$4EVN6L4PHd1F/RlacQqjWu7ZJju89fgH5l6WbKOQISIWVIeTi14OG"
     },
     {
         "_id": {
             "$oid": "123456789012345678901235"
         },
         "name": "Kajol",
-        "email": "kajol@telstra.com",
-        "password": "kajol"
+        "email": "kajol@example.com",
+        "password": "$2b$10$CTgZA2sD/XW7LlxH5bWY2.5K0pBAqeMmDg1F.elipSFqVEAlGIDe."
     },
     {
         "_id": {
             "$oid": "123456789012345678901236"
         },
         "name": "Deepika Padukone",
-        "email": "deepika@telstra.com",
-        "password": "deepika"
+        "email": "deepika@example.com",
+        "password": "$2b$10$DHcL7F67oqQhRqT1Gr8Y7evLi1LxG1F0IkaUYL.pPHsy2v8rSvR0G"
     },
     {
         "_id": {
             "$oid": "123456789012345678901237"
         },
         "name": "Ranbir Kapoor",
-        "email": "ranbir@telstra.com",
-        "password": "ranbir"
+        "email": "ranbir@example.com",
+        "password": "$2b$10$l5QGUNsu1pX/xeLdoZ2CXuShc4Ss.L.t6SikB45BreWi7W6zM8MBy"
     },
     {
         "_id": {
             "$oid": "123456789012345678901238"
         },
         "name": "Ranveer Singh",
-        "email": "ranveer@telstra.com",
-        "password": "ranveer"
+        "email": "ranveer@example.com",
+        "password": "$2b$10$n63Jt5Bb4np5DReS5UogduFAhJ6t24Ir0Feafqc3T/aK1IEzkgqzi"
     },
     {
         "_id": {
             "$oid": "123456789012345678901239"
         },
         "name": "Amitabh Bachchan",
-        "email": "amitabh@telstra.com",
-        "password": "amitabh"
+        "email": "amitabh@example.com",
+        "password": "$2b$10$Gh0Ay7ON8OfNNn5nrAvB3.4ZDkIJZjj7nQJPv8VhyIDOoPwKpALdW"
     },
     {
         "_id": {
             "$oid": "123456789012345678901240"
         },
         "name": "John Abraham",
-        "email": "john@telstra.com",
-        "password": "john"
+        "email": "john@example.com",
+        "password": "$2b$10$MvYr.NAJDk8nUxZmkY.ls.xMRYHyyGcwEtuoyGGIP7cGiwa96gt2K"
     },
     {
         "_id": {
             "$oid": "123456789012345678901241"
         },
         "name": "Virat Kohli",
-        "email": "kohli@telstra.com",
-        "password": "kohli"
+        "email": "kohli@example.com",
+        "password": "$2b$10$O9fZdu96O6QkadJ6cOcUNu8kaB.rCHMilXNDegdoZibMnwV9Kr006"
     },
     {
         "_id": {
             "$oid": "123456789012345678901242"
         },
         "name": "Mahendra Singh Dhoni",
-        "email": "dhoni@telstra.com",
-        "password": "dhoni"
+        "email": "dhoni@example.com",
+        "password": "$2b$10$/yVljQxh7XxNTDsNa3FyNuWLrKRfkh4L0B3lHQtRDq7D6jUK0GtjS"
     },
     {
         "_id": {
             "$oid": "123456789012345678901243"
         },
         "name": "Rahul Dravid",
-        "email": "dravid@telstra.com",
-        "password": "dravid"
+        "email": "dravid@example.com",
+        "password": "$2b$10$8saWefv139iL1cg1CrOpmulbeEUNa3H9U39a8.FuKj3RP/oPv0orC"
     },
     {
         "_id": {
             "$oid": "123456789012345678901244"
         },
         "name": "Sachin Tendulkar",
-        "email": "sachin@telstra.com",
-        "password": "sachin"
+        "email": "sachin@example.com",
+        "password": "$2b$10$C/6CYMRtgHJHItGzeBPMTuEJ3eiLciSrVV6f5i8UYZSMd9J5rcrjq"
     },
     {
         "_id": {
             "$oid": "123456789012345678901245"
         },
         "name": "Virender Sehwag",
-        "email": "sehwag@telstra.com",
-        "password": "sehwag"
+        "email": "sehwag@example.com",
+        "password": "$2b$10$qqKSWloNe8/j1MX1/d6qOugRUSfprxA.mSmo56omwYU/LZ0qnu8L6"
     },
     {
         "_id": {
             "$oid": "123456789012345678901246"
         },
         "name": "Jasprit Bumrah",
-        "email": "bumrah@telstra.com",
-        "password": "bumrah"
+        "email": "bumrah@example.com",
+        "password": "$2b$10$6ZiBncADPWqd/S8QIaPbM.hrCWbDDwSNICFpCsC3uqYNYMlzUPYPC"
     },
     {
         "_id": {
             "$oid": "123456789012345678901247"
         },
         "name": "Ravi Ashwin",
-        "email": "ashwin@telstra.com",
-        "password": "ashwin"
+        "email": "ashwin@example.com",
+        "password": "$2b$10$D9Q/e2zPJQ88XMrffU3oPONEhs2PmnQuwJ2030akPYcWeizwd3Srm"
     },
     {
         "_id": {
             "$oid": "123456789012345678901248"
         },
         "name": "Irfan Pathan",
-        "email": "irfan@telstra.com",
-        "password": "irfan"
+        "email": "irfan@example.com",
+        "password": "$2b$10$1qW.QmlpnjTmH8Ql1Uye2.TJ1ZsuWYhBEFEXjE.YHw7mADHczGHr2"
     },
     {
         "_id": {
             "$oid": "123456789012345678901249"
         },
         "name": "Aravind Varier",
-        "email": "aravind@telstra.com",
-        "password": "aravind"
+        "email": "aravind@example.com",
+        "password": "$2b$10$0hxvHEbmmYwP/qzRLWGLZe1HXjcEM2k6c8aBLH4bNNL2ChyIDrAw6"
     },
     {
         "_id": {
             "$oid": "123456789012345678901250"
         },
         "name": "Asmita Chavan",
-        "email": "asmita@telstra.com",
-        "password": "asmita"
+        "email": "asmita@example.com",
+        "password": "$2b$10$gXAeDN783actLHuoyGt.veeQDxMSfxkcdv/CSYDEM9bX3rRtGnMte"
     },
     {
         "_id": {
             "$oid": "123456789012345678901251"
         },
         "name": "Dhruv Khanna",
-        "email": "dhruv@telstra.com",
-        "password": "dhruv"
+        "email": "dhruv@example.com",
+        "password": "$2b$10$aFMkhHtgPn9IAXToDNBZJuAZzM6orGjG.ZSqUt3T7MrP6OGUCkAdu"
     },
     {
         "_id": {
             "$oid": "123456789012345678901252"
         },
         "name": "Divya Nagare",
-        "email": "divya@telstra.com",
-        "password": "divya"
+        "email": "divya@example.com",
+        "password": "$2b$10$ouKAQTKZrldY0A887KjdKOwTJpgRdrEQbGyp0DVV0hdzSxcU2ToY2"
     },
     {
         "_id": {
             "$oid": "123456789012345678901253"
         },
         "name": "Gaurav Deore",
-        "email": "gaurav@telstra.com",
-        "password": "gaurav"
+        "email": "gaurav@example.com",
+        "password": "$2b$10$2TJtm.JJyLHjms.K.ojKBuqy711uKxIH6NsA.rxZuMIXgiASOqPrq"
     },
     {
         "_id": {
             "$oid": "123456789012345678901254"
         },
         "name": "Piyush Eklavya",
-        "email": "piyush@telstra.com",
-        "password": "piyush"
+        "email": "piyush@example.com",
+        "password": "$2b$10$ZXGSza8zTKmMkXzq3CR.EeDYPA4TbzccVc8bXCoaT7Qp9aM2u/B.q"
     },
     {
         "_id": {
             "$oid": "123456789012345678901255"
         },
         "name": "Rahul Anand",
-        "email": "rahul@telstra.com",
-        "password": "rahul"
+        "email": "rahul@example.com",
+        "password": "$2b$10$6NwFW9NjUp8yYlUtJhP1cOHJC3vnbPfVjb5KgwVppYmswCram9F3G"
     },
     {
         "_id": {
             "$oid": "123456789012345678901256"
         },
         "name": "Sahil Bhola",
-        "email": "sahil@telstra.com",
-        "password": "sahil"
+        "email": "sahil@example.com",
+        "password": "$2b$10$IyvxuR4IaRpe.cry5SwTY.sgiS8Ypazm6KvMH15h1L8Cx0mYqYgWq"
     },
     {
         "_id": {
             "$oid": "123456789012345678901257"
         },
         "name": "Vinay Reddy",
-        "email": "vinay@telstra.com",
-        "password": "vinay"
+        "email": "vinay@example.com",
+        "password": "$2b$10$rhiOIaIpIm82wnJHfnifjewDBSZV56SmUQp6.Ac8n.D1swXWEi.1W"
     },
     {
         "_id": {
             "$oid": "123456789012345678901258"
         },
         "name": "Mukesh Ambani",
-        "email": "ambani@telstra.com",
-        "password": "ambani"
+        "email": "ambani@example.com",
+        "password": "$2b$10$DQZF4VV2oNWmr5Gdtt17OuHqHm7/JKPnWh1BRN9Pn1tWQ2.B.s1Xq"
     },
     {
         "_id": {
             "$oid": "123456789012345678901259"
         },
         "name": "Ratan Tata",
-        "email": "tata@telstra.com",
-        "password": "tata"
+        "email": "tata@example.com",
+        "password": "$2b$10$3N74jMmf934rNdFiSBm/juTE7h5T7v40wYCkHgzM3aRwqOumVxzBW"
     },
     {
         "_id": {
             "$oid": "123456789012345678901260"
         },
         "name": "Kumarmangalam Birla",
-        "email": "birla@telstra.com",
-        "password": "birla"
+        "email": "birla@example.com",
+        "password": "$2b$10$PU0brSNxUOTtdhsGNNg/d.Kc/atKOeK.KjTBXzG85kwqmvwowYHC2"
     },
     {
         "_id": {
             "$oid": "123456789012345678901261"
         },
         "name": "Azim Premji",
-        "email": "azim@telstra.com",
-        "password": "azim"
+        "email": "azim@example.com",
+        "password": "$2b$10$QdFqxoUZwuDmoHFL9UJuPue5cghKCMEipRzxZdGx6PSf9VuHOlmhm"
     },
     {
         "_id": {
             "$oid": "123456789012345678901262"
         },
         "name": "Gautam Adani",
-        "email": "adani@telstra.com",
-        "password": "adani"
+        "email": "adani@example.com",
+        "password": "$2b$10$4V7a4tZPqiJFUM6kvyQni.0DTo261jaFVDNVatVMiO68mksII86LK"
     },
     {
         "_id": {
             "$oid": "123456789012345678901263"
         },
         "name": "Narayana Murthy",
-        "email": "murthy@telstra.com",
-        "password": "murthy"
+        "email": "murthy@example.com",
+        "password": "$2b$10$wbxk4XKfJ5v7K7RFxPiMKOdUSF3Q.dQpAfmFHkdnyKbjRRbyD/fYq"
     }
 ]
