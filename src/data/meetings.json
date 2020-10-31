@@ -6,7 +6,7 @@
         "name": "Post-training party",
         "description": "Cheers! Online party to celebrate successful completion of training.",
         "date": {
-            "$date": "2020-09-19T00:00:00.000Z"
+            "$date": "2020-11-05T00:00:00.000Z"
         },
         "startTime": { "hours": 20, "minutes": 0 },
         "endTime": { "hours": 21, "minutes": 30 },
@@ -15,55 +15,55 @@
                 "userId": {
                     "$oid": "123456789012345678901249"
                 },
-                "email": "aravind@telstra.com"
+                "email": "aravind@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901250"
                 },
-                "email": "asmita@telstra.com"
+                "email": "asmita@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901251"
                 },
-                "email": "dhruv@telstra.com"
+                "email": "dhruv@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901252"
                 },
-                "email": "divya@telstra.com"
+                "email": "divya@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901253"
                 },
-                "email": "gaurav@telstra.com"
+                "email": "gaurav@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901254"
                 },
-                "email": "piyush@telstra.com"
+                "email": "piyush@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901255"
                 },
-                "email": "rahul@telstra.com"
+                "email": "rahul@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901256"
                 },
-                "email": "sahil@telstra.com"
+                "email": "sahil@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901257"
                 },
-                "email": "vinay@telstra.com"
+                "email": "vinay@example.com"
             }
         ]
     },
@@ -74,7 +74,7 @@
         "name": "User profile pic",
         "description": "Meeting to discuss S3 profile pic edit and upload requirements, and assign tasks",
         "date": {
-            "$date": "2020-09-17T00:00:00.000Z"
+            "$date": "2020-10-28T00:00:00.000Z"
         },
         "startTime": { "hours": 9, "minutes": 30 },
         "endTime": { "hours": 10, "minutes": 0 },
@@ -83,31 +83,31 @@
                 "userId": {
                     "$oid": "123456789012345678901251"
                 },
-                "email": "dhruv@telstra.com"
+                "email": "dhruv@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901252"
                 },
-                "email": "divya@telstra.com"
+                "email": "divya@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901253"
                 },
-                "email": "gaurav@telstra.com"
+                "email": "gaurav@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901255"
                 },
-                "email": "rahul@telstra.com"
+                "email": "rahul@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901256"
                 },
-                "email": "sahil@telstra.com"
+                "email": "sahil@example.com"
             }
         ]
     },
@@ -118,7 +118,7 @@
         "name": "Admin features",
         "description": "Meeting to discuss implementation of Admin features, and assign tasks",
         "date": {
-            "$date": "2020-09-17T00:00:00.000Z"
+            "$date": "2020-10-28T00:00:00.000Z"
         },
         "startTime": { "hours": 9, "minutes": 30 },
         "endTime": { "hours": 10, "minutes": 0 },
@@ -127,25 +127,25 @@
                 "userId": {
                     "$oid": "123456789012345678901249"
                 },
-                "email": "aravind@telstra.com"
+                "email": "aravind@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901250"
                 },
-                "email": "asmita@telstra.com"
+                "email": "asmita@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901254"
                 },
-                "email": "piyush@telstra.com"
+                "email": "piyush@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901257"
                 },
-                "email": "vinay@telstra.com"
+                "email": "vinay@example.com"
             }
         ]
     },
@@ -156,7 +156,7 @@
         "name": "Short-film making workshop",
         "description": "Workshop on making short films by various artists at Telstra",
         "date": {
-            "$date": "2020-09-16T00:00:00.000Z"
+            "$date": "2020-10-27T00:00:00.000Z"
         },
         "startTime": { "hours": 18, "minutes": 0 },
         "endTime": { "hours": 20, "minutes": 0 },
@@ -165,43 +165,43 @@
                 "userId": {
                     "$oid": "123456789012345678901236"
                 },
-                "email": "deepika@telstra.com"
+                "email": "deepika@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901239"
                 },
-                "email": "amitabh@telstra.com"
+                "email": "amitabh@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901240"
                 },
-                "email": "john@telstra.com"
+                "email": "john@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901249"
                 },
-                "email": "aravind@telstra.com"
+                "email": "aravind@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901250"
                 },
-                "email": "asmita@telstra.com"
+                "email": "asmita@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901255"
                 },
-                "email": "rahul@telstra.com"
+                "email": "rahul@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901256"
                 },
-                "email": "sahil@telstra.com"
+                "email": "sahil@example.com"
             }
         ]
     },
@@ -212,7 +212,7 @@
         "name": "Rock-solid defence",
         "description": "How to tire your opponents into submission yet not break a sweat",
         "date": {
-            "$date": "2020-09-16T00:00:00.000Z"
+            "$date": "2020-10-26T00:00:00.000Z"
         },
         "startTime": { "hours": 16, "minutes": 30 },
         "endTime": { "hours": 17, "minutes": 45 },
@@ -221,51 +221,51 @@
                 "userId": {
                     "$oid": "123456789012345678901241"
                 },
-                "email": "kohli@telstra.com"
+                "email": "kohli@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901243"
                 },
-                "email": "dravid@telstra.com"
+                "email": "dravid@example.com"
             },
             {
                 "_id": {
                     "$oid": "123456789012345678901244"
                 },
                 "name": "Sachin Tendulkar",
-                "email": "sachin@telstra.com",
+                "email": "sachin@example.com",
                 "password": "sachin"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901251"
                 },
-                "email": "dhruv@telstra.com"
+                "email": "dhruv@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901252"
                 },
-                "email": "divya@telstra.com"
+                "email": "divya@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901253"
                 },
-                "email": "gaurav@telstra.com"
+                "email": "gaurav@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901254"
                 },
-                "email": "piyush@telstra.com"
+                "email": "piyush@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901257"
                 },
-                "email": "vinay@telstra.com"
+                "email": "vinay@example.com"
             }
         ]
     },
@@ -276,7 +276,7 @@
         "name": "User profile pic - Presentation",
         "description": "Presentation on implementation of S3 profile pic edit and upload requirements",
         "date": {
-            "$date": "2020-09-18T00:00:00.000Z"
+            "$date": "2020-10-28T00:00:00.000Z"
         },
         "startTime": { "hours": 15, "minutes": 15 },
         "endTime": { "hours": 16, "minutes": 0 },
@@ -285,31 +285,31 @@
                 "userId": {
                     "$oid": "123456789012345678901251"
                 },
-                "email": "dhruv@telstra.com"
+                "email": "dhruv@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901252"
                 },
-                "email": "divya@telstra.com"
+                "email": "divya@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901253"
                 },
-                "email": "gaurav@telstra.com"
+                "email": "gaurav@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901255"
                 },
-                "email": "rahul@telstra.com"
+                "email": "rahul@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901256"
                 },
-                "email": "sahil@telstra.com"
+                "email": "sahil@example.com"
             }
         ]
     },
@@ -320,7 +320,7 @@
         "name": "Admin features - Presentation",
         "description": "Presentation on implementation of Admin features",
         "date": {
-            "$date": "2020-09-18T00:00:00.000Z"
+            "$date": "2020-10-28T00:00:00.000Z"
         },
         "startTime": { "hours": 14, "minutes": 30 },
         "endTime": { "hours": 15, "minutes": 15 },
@@ -329,25 +329,25 @@
                 "userId": {
                     "$oid": "123456789012345678901249"
                 },
-                "email": "aravind@telstra.com"
+                "email": "aravind@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901250"
                 },
-                "email": "asmita@telstra.com"
+                "email": "asmita@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901254"
                 },
-                "email": "piyush@telstra.com"
+                "email": "piyush@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901257"
                 },
-                "email": "vinay@telstra.com"
+                "email": "vinay@example.com"
             }
         ]
     }

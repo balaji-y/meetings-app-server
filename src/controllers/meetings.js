@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 const Meeting = mongoose.model('Meeting');
 const User = mongoose.model('User');
+const Team = mongoose.model('Team');
+const nodemailer = require('nodemailer');
 
 async function getMeetings(req,res,next){
     let date = req.query.date;
@@ -97,6 +99,29 @@ async function addUsersForMeeting(req,res,next){
             const updatedMeeting = await Meeting.findByIdAndUpdate(meetingId,{
                                         $addToSet: { attendees : userIds }
                                      },{runValidators:true});
+
+            const transporter = nodemailer.createTransport({
+                    service: 'gmail',
+                    auth: {
+                      user: 'balaji.y.1228@gmail.com',
+                      pass: 'Balaji_1228' 
+                    }
+                  });
+                  
+                  const mailOptions = {
+                    from: 'balaji.y.1228@gmail.com',
+                    to: userIds.email,
+                    subject: 'You have been added to a meeting',
+                    text: `you are added to meeting ${updatedMeeting.name}`
+                  };
+                  
+                  transporter.sendMail(mailOptions, function(error, info){
+                    if (error) {
+                      console.log(error);
+                    } else {
+                      console.log('Email sent: ' + info.response);
+                    }
+                  });
             res.json(updatedMeeting);
     
         }
@@ -112,9 +137,39 @@ async function addMeeting(req, res, next){
     //console.log(data);
     const email = res.locals.claims.email;
     const userId =  res.locals.claims.userId;
-    const attendeesEmail = meeting.attendeesEmail;
+    let attendeesEmailSepByComma = meeting.attendeesEmail;
+    let attendeesEmail = [];
+    let attendeesEmailWithoutFilter = meeting.attendeesEmail.split(',');
+    for(let i=0;i<attendeesEmailWithoutFilter.length;i++)
+    {
+        const attendeeWithoutFilter = attendeesEmailWithoutFilter[i].trim();
+        if(attendeeWithoutFilter[0]==='@')
+        {
+            try{
+                teamMembers = await Team.find({shortName:attendeeWithoutFilter.substr(1)},{members:1,_id:0});
+                if(teamMembers.length>0)
+                {
+                    //console.log("teamMembers",teamMembers[0].members);
+                    const emails = teamMembers[0].members.map(team => team.email);  
+                    attendeesEmail.push(...emails);
+                    //console.log('check',attendeesEmail);
+                    // console.log("onlyemails",emails);
+                }
+            }
+            catch(error)
+            {
+                error.status = 403;
+                next(error);
+            }
+           
+        }
+        else
+        {
+            attendeesEmail.push(attendeeWithoutFilter);
+        }
+    }
+    console.log('attendees Email',attendeesEmail);
     const attendeesFilter = {email: {$in: attendeesEmail}};
-
 
     User.find(attendeesFilter).exec((error,users)=>{
         if(error)
@@ -131,6 +186,13 @@ async function addMeeting(req, res, next){
         });
 
         if( !validAttendees.find(attendee => attendee.userId.toString() === userId)){
+            if(validAttendees.length>0)
+            {
+                attendeesEmailSepByComma = attendeesEmailSepByComma.concat(`,${email}`);
+            }
+            else{
+                attendeesEmailSepByComma = email;
+            }
             validAttendees.push({userId,email});
         }
 
@@ -143,6 +205,30 @@ async function addMeeting(req, res, next){
                 next(error);
             }
             else{
+
+                const transporter = nodemailer.createTransport({
+                    service: 'gmail',
+                    auth: {
+                      user: 'balaji.y.1228@gmail.com',
+                      pass: 'Balaji_1228' 
+                    }
+                  });
+                  
+                  const mailOptions = {
+                    from: 'balaji.y.1228@gmail.com',
+                    to: attendeesEmailSepByComma,
+                    subject: 'You have been added to a meeting',
+                    text: `you are added to meeting ${createdMeeting.name}`
+                  };
+                  
+                  transporter.sendMail(mailOptions, function(error, info){
+                    if (error) {
+                      console.log(error);
+                    } else {
+                      console.log('Email sent: ' + info.response);
+                    }
+                  });
+
                 res.status(201).json(createdMeeting);
             }
         })

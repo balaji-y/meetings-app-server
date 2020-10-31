@@ -11,55 +11,55 @@
                 "userId": {
                     "$oid": "123456789012345678901249"
                 },
-                "email": "aravind@telstra.com"
+                "email": "aravind@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901250"
                 },
-                "email": "asmita@telstra.com"
+                "email": "asmita@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901251"
                 },
-                "email": "dhruv@telstra.com"
+                "email": "dhruv@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901252"
                 },
-                "email": "divya@telstra.com"
+                "email": "divya@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901253"
                 },
-                "email": "gaurav@telstra.com"
+                "email": "gaurav@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901254"
                 },
-                "email": "piyush@telstra.com"
+                "email": "piyush@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901255"
                 },
-                "email": "rahul@telstra.com"
+                "email": "rahul@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901256"
                 },
-                "email": "sahil@telstra.com"
+                "email": "sahil@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901257"
                 },
-                "email": "vinay@telstra.com"
+                "email": "vinay@example.com"
             }
         ]
     },
@@ -75,31 +75,31 @@
                 "userId": {
                     "$oid": "123456789012345678901234"
                 },
-                "email": "shahrukh@telstra.com"
+                "email": "shahrukh@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901235"
                 },
-                "email": "kajol@telstra.com"
+                "email": "kajol@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901236"
                 },
-                "email": "deepika@telstra.com"
+                "email": "deepika@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901237"
                 },
-                "email": "ranbir@telstra.com"
+                "email": "ranbir@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901238"
                 },
-                "email": "ranveer@telstra.com"
+                "email": "ranveer@example.com"
             }
         ]
     },
@@ -115,25 +115,25 @@
                 "userId": {
                     "$oid": "123456789012345678901241"
                 },
-                "email": "kohli@telstra.com"
+                "email": "kohli@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901242"
                 },
-                "email": "dhoni@telstra.com"
+                "email": "dhoni@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901243"
                 },
-                "email": "dravid@telstra.com"
+                "email": "dravid@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901244"
                 },
-                "email": "sachin@telstra.com"
+                "email": "sachin@example.com"
             }
         ]
     },
@@ -149,13 +149,13 @@
                 "userId": {
                     "$oid": "123456789012345678901241"
                 },
-                "email": "kohli@telstra.com"
+                "email": "kohli@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901242"
                 },
-                "email": "dhoni@telstra.com"
+                "email": "dhoni@example.com"
             }
         ]
     },
@@ -171,13 +171,13 @@
                 "userId": {
                     "$oid": "123456789012345678901247"
                 },
-                "email": "ashwin@telstra.com"
+                "email": "ashwin@example.com"
             },
             {
                 "userId": {
                     "$oid": "123456789012345678901248"
                 },
-                "email": "irfan@telstra.com"
+                "email": "irfan@example.com"
             }
         ]
     }
