@@ -37,6 +37,11 @@ async function sendToken(req,res,next){
                     });
                 });
                 }
+                else{
+                    const error = new Error('Passwords does not match');
+                    error.status = 400;
+                    next(error);
+                }
             })
         }
         else
