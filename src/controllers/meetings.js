@@ -49,7 +49,7 @@ async function getMeetings(req,res,next){
             }
             if(searchTerm)
             {
-                filter.description = { $regex : new RegExp(searchTerm,"i")}
+                filter.name = { $regex : new RegExp(searchTerm,"i")}
             }
             const meetings = await Meeting.find(filter);
             res.status(200).json(meetings);

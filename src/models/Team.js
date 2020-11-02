@@ -24,7 +24,10 @@ const teamSchema = new mongoose.Schema({
         type:String,
         required:true
     },
-    members: [ membersSchema ]
+    members: {
+        type:[ membersSchema ],
+        required:true
+    }
 },{versionKey:false});
 
 mongoose.model('Team',teamSchema);
