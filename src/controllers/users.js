@@ -31,4 +31,30 @@ async function getAllUsers(req,res,next){
     }
 }
 
-module.exports = {getUsers , getUserIdForEmail, getAllUsers};
+async function deleteUser(req,res,next){
+    try{
+        const id = req.query.id;
+        const deletedUser = await User.findByIdAndRemove(id);
+        res.json(deletedUser);
+    }
+    catch(error){
+        error.status = 500;
+        next(error);
+    }
+}
+
+async function updateUser(req,res,next){
+    try{
+        const user = req.body.user;
+        //console.log(user);
+        const updatedUser = await User.findByIdAndUpdate(user._id,user);
+        console.log(updateUser);
+        res.json(updatedUser)
+    }
+    catch(error){
+        error.status = 500;
+        next(error);
+    }
+}
+
+module.exports = {getUsers , getUserIdForEmail, getAllUsers,deleteUser,updateUser};
