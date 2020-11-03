@@ -18,6 +18,17 @@ async function getUserIdForEmail(req,res,next){
         next(error);
     }
     
+};
+
+async function getAllUsers(req,res,next){
+    try{
+        const users = await User.find({}).exec();
+        res.json(users);
+    }
+    catch(error){
+        error.status = 500;
+        next(error);
+    }
 }
 
-module.exports = {getUsers , getUserIdForEmail};
+module.exports = {getUsers , getUserIdForEmail, getAllUsers};

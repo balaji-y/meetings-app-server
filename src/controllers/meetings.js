@@ -107,12 +107,21 @@ async function addUsersForMeeting(req,res,next){
                       pass: 'Balaji_1228' 
                     }
                   });
+
+                  const outputMsg = `
+                  <p>You have been added to a meeting</p>
+                  <h3>Meeting Details</h3>
+                  <ul>
+                    <li>Name: ${updatedMeeting.name}</li>
+                    <li>Description: ${updatedMeeting.description}</li>
+                    <li>Date: ${updatedMeeting.date}</li>
+                 </ul>`;
                   
                   const mailOptions = {
                     from: 'balaji.y.1228@gmail.com',
                     to: userIds.email,
                     subject: 'You have been added to a meeting',
-                    text: `you are added to meeting ${updatedMeeting.name}`
+                    html: outputMsg
                   };
                   
                   transporter.sendMail(mailOptions, function(error, info){
@@ -178,6 +187,8 @@ async function addMeeting(req, res, next){
             return next(error);
         }
 
+        console.log("users",users);
+
         validAttendees = users.map(user => {
             return {
                 userId: user._id,
@@ -213,12 +224,21 @@ async function addMeeting(req, res, next){
                       pass: 'Balaji_1228' 
                     }
                   });
+
+                  const outputMsg = `
+                  <p>You have been added to a meeting</p>
+                  <h3>Meeting Details</h3>
+                  <ul>
+                    <li>Name: ${meeting.name}</li>
+                    <li>Description: ${meeting.description}</li>
+                    <li>Date: ${meeting.date}</li>
+                 </ul>`;
                   
                   const mailOptions = {
                     from: 'balaji.y.1228@gmail.com',
                     to: attendeesEmailSepByComma,
                     subject: 'You have been added to a meeting',
-                    text: `you are added to meeting ${createdMeeting.name}`
+                    html: outputMsg
                   };
                   
                   transporter.sendMail(mailOptions, function(error, info){
@@ -236,4 +256,17 @@ async function addMeeting(req, res, next){
 }
 
 
-module.exports = { getMeetings,deleteUserFromMeeting,addUsersForMeeting,addMeeting };
+async function getAllMeetings(req,res,next){
+    try{
+        const meetings = await Meeting.find({}).exec();
+        res.json(meetings);
+    }
+    catch(error){
+        error.status = 500;
+        next(error);
+    }
+    
+}
+
+
+module.exports = { getMeetings,deleteUserFromMeeting,addUsersForMeeting,addMeeting,getAllMeetings };

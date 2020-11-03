@@ -109,4 +109,16 @@ async function addTeam(req,res,next)
 
 }
 
-module.exports = {getTeamsForUser, addUserToTeam, deleteUserFromTeam, addTeam};
+
+async function getAllTeams(req,res,next){
+    try{
+        const teams = await Team.find({}).exec();
+        res.json(teams);
+    }
+    catch(error){
+        error.status = 500;
+        next(error);
+    }
+}
+
+module.exports = {getTeamsForUser, addUserToTeam, deleteUserFromTeam, addTeam, getAllTeams};

@@ -33,7 +33,8 @@ async function sendToken(req,res,next){
                         message: 'Signed in sucessfully',
                         token: token,
                         email: user.email,
-                        name: user.name
+                        name: user.name,
+                        role: user.role
                     });
                 });
                 }
